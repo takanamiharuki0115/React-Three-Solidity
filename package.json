@@ -2,11 +2,14 @@
   "name": "react-three-next-tx",
   "version": "0.0.1",
   "private": true,
+  "workspaces": [
+    "src/*"
+  ],
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build ",
+    "dev": "next dev",
+    "build": "next build ",
     "start": "next start",
-    "lint": "turbo build lint",
+    "lint": "next build lint",
     "prettier": "prettier -l \"./src/**/*.{js,jsx,ts,tsx,md}\"",
     "export": "EXPORT=true turbo build && EXPORT=true turbo export",
     "analyze": "ANALYZE=true turbo build"
@@ -14,6 +17,7 @@
   "dependencies": {
     "@react-three/drei": "^9.40.0",
     "@react-three/fiber": "^8.9.1",
+    "@studio-freight/lenis": "studio-freight/lenis",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
@@ -31,6 +35,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^13.0.2",
+    "@types/three": "^0.144.0",
     "autoprefixer": "^10.4.13",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-tailwind": "^0.2.1",
