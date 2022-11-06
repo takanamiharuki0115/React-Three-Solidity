@@ -6,20 +6,42 @@
     "dev": "turbo dev",
     "build": "turbo build ",
     "start": "next start",
-    "lint": "turbo build lint"
+    "lint": "turbo build lint",
+    "prettier": "prettier -l \"./src/**/*.{js,jsx,ts,tsx,md}\"",
+    "export": "EXPORT=true turbo build && EXPORT=true turbo export",
+    "analyze": "ANALYZE=true turbo build"
   },
   "dependencies": {
+    "@react-three/drei": "^9.40.0",
+    "@react-three/fiber": "^8.9.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
-    "eslint": "8.27.0",
-    "eslint-config-next": "13.0.2",
+    "eslint": "^8.27.0",
+    "eslint-config-next": "^13.0.2",
+    "glsl-random": "^0.0.5",
     "next": "13.0.2",
+    "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-merge-refs": "^2.0.1",
+    "three": "^0.146.0",
+    "three-stdlib": "^2.17.3",
     "typescript": "4.8.4"
   },
   "devDependencies": {
-    "turbo": "^1.6.3"
+    "@next/bundle-analyzer": "^13.0.2",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-tailwind": "^0.2.1",
+    "file-loader": "^6.2.0",
+    "glslify": "^7.1.1",
+    "netlify-cli": "^12.1.0",
+    "postcss": "^8.4.18",
+    "prettier": "^2.7.1",
+    "raw-loader": "^4.0.2",
+    "tailwindcss": "^3.2.2",
+    "turbo": "^1.6.3",
+    "url-loader": "^4.1.1"
   }
 }
