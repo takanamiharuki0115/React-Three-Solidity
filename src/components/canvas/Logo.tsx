@@ -1,10 +1,19 @@
 import * as THREE from 'three'
-import { useMemo, useRef, useState } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useFrame } from '@react-three/fiber'
 import { Line, useCursor } from '@react-three/drei'
 
-export default function Logo({ route, ...props }) {
+interface ILogoProps {
+  scale?: number
+  route: string
+}
+
+const Logo:React.FC<ILogoProps> = ({
+  scale = 0.5,
+  route,
+  ...props
+}) => {
   const router = useRouter()
   const mesh = useRef(null)
   const [hovered, hover] = useState(false)
@@ -13,8 +22,11 @@ export default function Logo({ route, ...props }) {
   useCursor(hovered)
   useFrame((state, delta) => {
     const t = state.clock.getElapsedTime()
+    // @ts-ignore
     mesh.current.rotation.y = Math.sin(t) * (Math.PI / 8)
+    // @ts-ignore
     mesh.current.rotation.x = Math.cos(t) * (Math.PI / 8)
+    // @ts-ignore
     mesh.current.rotation.z -= delta / 4
   })
 
@@ -33,3 +45,5 @@ export default function Logo({ route, ...props }) {
     </group>
   )
 }
+
+export default Logo

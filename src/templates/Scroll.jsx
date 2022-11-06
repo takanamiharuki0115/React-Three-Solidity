@@ -16,7 +16,7 @@ const state = {
 
 const { damp } = THREE.MathUtils
 
-export default function Scroll({ children }) {
+const Scroll = ({ children }) => {
   const content = useRef(null)
   const wrapper = useRef(null)
 
@@ -74,3 +74,5 @@ export const ScrollTicker = ({ smooth = 9999999 }) => {
 
   return null
 }
+
+export default Scroll
