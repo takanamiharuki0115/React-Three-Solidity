@@ -1,50 +1,33 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import { MathUtils, Quaternion, Vector3 } from 'three'
-import { useCursor, Point, Points, PointMaterial, shaderMaterial } from '@react-three/drei'
+import { Point, Points, PointMaterial } from '@react-three/drei'
 import { extend, useFrame, useThree } from '@react-three/fiber'
 
 import * as buffer from 'maath/buffer'
 import * as misc from 'maath/misc'
 
-
 const rotationAxis = new Vector3(0, 1, 0).normalize()
 const q = new Quaternion()
 
-const MyPointsMaterial = shaderMaterial(
-  {
-    u: 1,
-  },
-  /* glsl */ `
-    attribute float size;
-    attribute vec3 color;
-
-    varying vec3 vColor;
-
-    void main() {
-      vColor = color;
-      vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
-      gl_PointSize = size * ( 300.0 / -mvPosition.z );
-      gl_Position = projectionMatrix * mvPosition;
-    }
-
-  `,
-  /* glsl */ `
-    varying vec3 vColor;
-
-    void main() {
-      gl_FragColor = vec4( vColor, 1.0 );
-
-      #include <tonemapping_fragment>
-      #include <encodings_fragment>
-    }
-  `
-)
-
-extend({ MyPointsMaterial })
-
 // @ts-ignore
 const makeBuffer = (...args) => Float32Array.from(...args)
+const PointEvent = ({
+  color, 
+  ...props
+}: any) => {
+  const [hovered, setHover] = React.useState(false)
+  const [clicked, setClick] = React.useState(false)
+  return (
+    <Point
+      {...props}
+      color={clicked ? 'hotpink' : hovered ? 'red' : color}
+      onPointerOver={(e) => (e.stopPropagation(), setHover(true))}
+      onPointerOut={(e) => setHover(false)}
+      onClick={(e) => (e.stopPropagation(), setClick((state) => !state))}
+    />
+  )
+}
 
 interface BufferCubeProps {
   route: string
@@ -58,7 +41,7 @@ const CubePoints: React.FC<BufferCubeProps> = ({
 }) => {
   const router = useRouter()
   
-  const n = 25_000
+  const n = 2_000
   const [positionA] = React.useState(() => makeBuffer({ length: n * 3 }, () => MathUtils.randFloatSpread(1)))
   const [positionB] = React.useState(() => makeBuffer({ length: n * 3 }, () => MathUtils.randFloatSpread(5)))
   const [positionFinal] = React.useState(() => positionB.slice(0))
@@ -80,7 +63,7 @@ const CubePoints: React.FC<BufferCubeProps> = ({
   return (
     <Points positions={positionFinal} colors={color} sizes={size} onClick={() => router.push(route)}>
       {/* @ts-ignore */}
-      <myPointsMaterial />
+      <PointMaterial transparent vertexColors size={15} sizeAttenuation={false} depthWrite={false} />
     </Points>
   )
 }
