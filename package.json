@@ -15,7 +15,7 @@
     "analyze": "ANALYZE=true turbo build"
   },
   "dependencies": {
-    "@react-three/drei": "^9.53.0",
+    "@react-three/drei": "^9.56.8",
     "@react-three/fiber": "^8.10.0",
     "glsl-random": "^0.0.5",
     "maath": "^0.5.1",
@@ -36,7 +36,7 @@
     "@types/react-dom": "^18.0.10",
     "@types/three": "^0.148.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "eslint-config-next": "^13.1.2",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-tailwind": "^0.2.1",
