@@ -1981,9 +1981,9 @@
     zustand "^3.5.13"
 
 "@react-three/fiber@^8.11.6":
-  version "8.11.6"
-  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.11.6.tgz#5eaec2689de4e907c038d0946b3917da1687c035"
-  integrity sha512-K/Do9kA2PKwGVeXOFQ4/sKGvm2Ar6ddDv4CjjdqPnjI6ol1rBESLHxQrf+WyHwDSNsvaiKASr3hI0rPTh8l6bw==
+  version "8.12.0"
+  resolved "https://registry.yarnpkg.com/@react-three/fiber/-/fiber-8.12.0.tgz#80241992d780d436dfba59d90d9b61e52371fa3e"
+  integrity sha512-o6DkNtNHqcOFRbxaiY5xayelE/9+Z0z9wWu5awqjVbc0c/1QM6AttJH6rKW0U/O6LWxSfxDTARXVzknZqpDJ7A==
   dependencies:
     "@babel/runtime" "^7.17.8"
     "@types/react-reconciler" "^0.26.7"
@@ -2287,16 +2287,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "18.0.27"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.27.tgz#d9425abe187a00f8a5ec182b010d4fd9da703b71"
-  integrity sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@^18.0.28":
+"@types/react@*", "@types/react@^18.0.28":
   version "18.0.28"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.28.tgz#accaeb8b86f4908057ad629a26635fe641480065"
   integrity sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==
@@ -7322,9 +7313,9 @@ isurl@^1.0.0-alpha5:
     is-object "^1.0.1"
 
 its-fine@^1.0.6:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/its-fine/-/its-fine-1.0.9.tgz#f4ca0ad5bdbf896764d35f7cf24c16287b6c6d31"
-  integrity sha512-Ph+vcp1R100JOM4raXmDx/wCTi4kMkMXiFE108qGzsLdghXFPqad82UJJtqT1jwdyWYkTU6eDpDnol/ZIzW+1g==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/its-fine/-/its-fine-1.1.0.tgz#9ea0022c5e7a123e46bdc72a18b48d766ee4679f"
+  integrity sha512-nEoEt5EYSed1mmvwCRv3l1+6T7pyu4ltyBihzPjUtaSWhFhUPU/c7xkPDIutTh8FeIv0F1F5wOFYI8a2s5rlBA==
   dependencies:
     "@types/react-reconciler" "^0.28.0"
 
