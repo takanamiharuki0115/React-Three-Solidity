@@ -878,14 +878,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.11.2":
-  version "7.20.13"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
-  integrity sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==
-  dependencies:
-    regenerator-runtime "^0.13.11"
-
-"@babel/runtime@^7.16.7", "@babel/runtime@^7.17.8", "@babel/runtime@^7.20.7":
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.16.7", "@babel/runtime@^7.17.8", "@babel/runtime@^7.20.7":
   version "7.21.0"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.0.tgz#5b55c9d394e5fcf304909a8b00c07dc217b56673"
   integrity sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==
@@ -1955,15 +1948,15 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.57.0":
-  version "9.57.0"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.57.0.tgz#9ec3120c88fc0a21c38f10478108fc95ebba0288"
-  integrity sha512-jlGnzJ8zJdfFof8HtGGY7ANKvuupK81V0YX+lc4aayIlVFrN4Pi0GvpsR7+vhpkyPfxQ0qOOE6HWBqhfBm8EIg==
+  version "9.57.3"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.57.3.tgz#86410c55279bb402845af10f18cd6736c7d1f98d"
+  integrity sha512-zkkrIrd3kuKkRlT0IUg6y8dBppZiv2KXrS6IzUIOKAAwbsNAotAQT//0u6Z242q0WdSfxiQgPFi3WApKpbENPw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "~9.6.1"
     "@use-gesture/react" "^10.2.24"
-    camera-controls "^2.1.0"
-    detect-gpu "^5.0.10"
+    camera-controls "^2.3.1"
+    detect-gpu "^5.0.14"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
     lodash.omit "^4.5.0"
@@ -3395,10 +3388,10 @@ camelcase@^7.0.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-7.0.1.tgz#f02e50af9fd7782bc8b88a3558c32fd3a388f048"
   integrity sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==
 
-camera-controls@^2.1.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.3.1.tgz#8e8e241fb874ae38b6fa1d22ba445a2e7b3b94ea"
-  integrity sha512-mGPDOqCTSUqaeX3yR3bWQ/p1M5CR8C+cnqndBxQugfGKysn1dhRtw8Q6sG1hq4GL8RPsGwRanwQk5zwQjyrxyQ==
+camera-controls@^2.3.1:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.3.2.tgz#6755b42e0fddfeda38feba8c4e1431563b043479"
+  integrity sha512-wCqg6Hf4RTMlambHB7gxmwo4aJk7seQ5w42ZXeRWAmVFcz1Gn25UpWr9CjlEC6+ghuTCghn1VeQZrIta2ZDFCA==
 
 caniuse-lite@^1.0.30001400:
   version "1.0.30001430"
@@ -4289,10 +4282,10 @@ destroy@1.2.0:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.2.0.tgz#4803735509ad8be552934c67df614f94e66fa015"
   integrity sha512-2sJGJTaXIIaR1w4iJSNoN0hnMY7Gpc/n8D4qSCJw8QqFWXf7cuAgnEHxBpweaVcPevC2l3KpjYCx3NypQQgaJg==
 
-detect-gpu@^5.0.10:
-  version "5.0.13"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.13.tgz#a029c6afcf3ba9dbda6b28a8fbbf0b4a36ad5742"
-  integrity sha512-IsQRA69imfta1BdFFIgOspwQn5z/CLMzREpXwxP6F0hniMr7dlamBUSFdOSEnsIUpfL8lrY1NenK2Zxal54qbw==
+detect-gpu@^5.0.14:
+  version "5.0.15"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.15.tgz#d375f89b246f21167859efbbd89eff60ccbcfd4d"
+  integrity sha512-ImImgPRhTvo/bmtotR1KG534ZE+L6yIV9sMe4y3zOUzeInnYk/9KOBqxz9M5hKkHXhGKKjY04pMrLMb+rp3FWw==
   dependencies:
     webgl-constants "^1.1.1"
 
