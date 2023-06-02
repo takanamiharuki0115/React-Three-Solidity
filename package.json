@@ -23,7 +23,7 @@
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.6",
     "glsl-random": "^0.0.5",
-    "maath": "^0.5.1",
+    "maath": "^0.6.0",
     "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
